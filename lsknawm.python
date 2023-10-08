@@ -5,3 +5,5 @@ headers = {
 }
 req = requests.get(url=url,headers=headers).text
 print(req)
+with open('test.html',mode='r',encoding='utf-8') as f:
+    f.write(req)
