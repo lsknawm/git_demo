@@ -1,0 +1,7 @@
+import json,requests
+url = 'www.baidu.com'
+headers = {
+    'data': 'data'
+}
+req = requests.get(url=url,headers=headers).text
+print(req)
